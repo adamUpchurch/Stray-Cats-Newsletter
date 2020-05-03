@@ -1,972 +1,161 @@
-<html style="opacity: 1;" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <!--[if !mso]><!-->
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <!--<![endif]-->
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title></title>
-    <style type="text/css">
-      .wrapper {
-        width: 100%;
-        table-layout: fixed;
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-      }
+<!DOCTYPE html>
+<!-- Set the language of your main document. This helps screenreaders use the proper language profile, pronunciation, and accent. -->
+<html lang="en">
+  <head>
+    <!-- The title is useful for screenreaders reading a document. Use your sender name or subject line. -->
+    <title>An Accessible Account Update Email</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Never disable zoom behavior! Fine to set the initial width and scale, but allow users to set their own zoom preferences. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; }
 
-      .webkit {
-        max-width: 640px;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      
-      p {
-      margin-left: 50px;
-      margin-right: 50px;
-      font-size:24px;
-      font-weight: normal; 
-      font-family: 'Book', Gotham SSm A, Gotham SSm B, Helvetica, Arial, sans-serif;
-      line-height: 27px;
-      color: #1a1a1a;
-      }
-      
-      .product_name {
-      margin-top:0;
-      margin-bottom:0px;
-      font-size:34px;
-      font-weight:bold;
-      font-family:'Bold', 'Maison-D', sans-serif;
-      line-height:40px;
-      color:#1a1a1a;
-      }
+        /* RESET STYLES */
+        img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; }
+        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
 
-      .outer {
-        border-spacing: 0;
-        font-family: sans-serif;
-        color: #333;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 640px;
-        min-width: 640px;
-      }
-
-      .hero_table {
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-right: 0;
-        padding-left: 0;
-        min-width: 640;
-      }
-
-      .hero_desktop {
-        border: 0;
-        border: 0;
-        max-width: 640;
-        height: auto;
-        display: block;
-      }
-
-      .hero_mobile {
-        display: none;
-        max-height: 0;
-        max-width: 0;
-        width: 0;
-        height: 0;
-        overflow: hidden;
-      }
-
-      .link {
-        text-decoration: none;
-        color: #1a1a1a;
-      }
-
-      .link_p {
-        text-decoration: none;
-        color: #fc6100;
-      }
-
-      .headline_h1 h1 {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 36px;
-        font-weight: 800;
-        font-family: "Bold", Maison, sans-serif;
-        line-height: 40px;
-        color: #121214;
-        letter-spacing: normal;
-      }
-
-      .body_large p {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 24px;
-        font-weight: 800;
-        font-family: "Bold", Maison, sans-serif;
-        line-height: 32px;
-        color: #121214;
-        letter-spacing: normal;
-      }
-
-      .mod_headline {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 24px;
-        font-weight: 800;
-        font-family: "Bold", Maison, sans-serif;
-        line-height: 32px;
-        color: #121214;
-        letter-spacing: normal;
-      }
-
-      .body_text {
-        padding-top: 0;
-        padding-bottom: 20px;
-        padding-right: 0;
-        padding-left: 0;
-        width: 100%;
-        text-align: center;
-      }
-
-      .privacy_body_text p {
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 15px;
-        font-weight: normal;
-        font-family: "Book", Helvetica, Arial, sans-serif;
-        line-height: 23px;
-        color: #5b5b64;
-      }
-
-      .mod_body_text {
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 15px;
-        font-weight: normal;
-        font-family: "Book", Helvetica, Arial, sans-serif;
-        line-height: 23px;
-        color: #5b5b64;
-      }
-
-      .body_text p {
-        margin-left: 40px;
-        margin-right: 40px;
-        font-size: 24px;
-        font-weight: normal;
-        font-family: "Book", Helvetica, Arial, sans-serif;
-        line-height: 28px;
-        color: #5b5b64;
-      }
-
-      .text_link {
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 17px !important;
-        font-weight: normal !important;
-        font-family: "Bold", Helvetica, Arial, sans-serif !important;
-        line-height: 22px !important;
-        color: #fc6100 !important;
-      }
-
-      .foot_top_button {
-        border: 1px solid #f0f0f5;
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-left: 0;
-        padding-right: 0;
-      }
-
-      .foot_top_button p {
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 13px;
-        font-weight: normal;
-        font-family: "Bold", Helvetica, Arial, sans-serif;
-        line-height: 20px;
-        color: #6d6d78;
-      }
-
-      .foot_top_button a {
-        text-decoration: none;
-        color: #6d6d78;
-      }
-
-      .foot_logo {
-        border-style: solid;
-        border-width: 0 1px 0 1px;
-        border-color: #f0f0f5;
-      }
-
-      .foot_text {
-        border-style: solid;
-        border-width: 0 1px 0 1px;
-        border-color: #f0f0f5;
-      }
-
-      .foot_text p {
-        margin-left: 40px;
-        margin-right: 40px;
-        font-size: 13px;
-        font-weight: normal;
-        font-family: "Book", Helvetica, Arial, sans-serif;
-        line-height: 20px;
-        color: #6d6d78;
-      }
-
-      .foot_link {
-        text-decoration: underline;
-        color: #6d6d78;
-      }
-
-      .foot_icon {
-        border-style: solid;
-        border-width: 0 1px 1px 1px;
-        border-color: #f0f0f5;
-      }
-
-      .privacy {
-        border-style: solid;
-        border-width: 0 1px 0 1px;
-        border-color: #f0f0f5;
-      }
-
-      .mod {
-        border-style: solid;
-        border-width: 0 1px 0 1px;
-        border-color: #f0f0f5;
-        min-width: 640px;
-      }
-
-      .button_hide {
-        display: none;
-        max-height: 0;
-        max-width: 0;
-        width: 0;
-        height: 0;
-        overflow: hidden;
-      }
-
-      .strav_100 {
-        font-size: 14px;
-        font-weight: normal;
-        font-family: Gotham SSm A, Gotham SSm B, Helvetica, Arial, sans-serif;
-        line-height: 20px;
-        color: #1a1a1a;
-        min-height: 100px;
-        border: 0;
-        max-width: 640px;
-        height: auto;
-        display: block;
-      }
-
-      .strav_mobile_img {
-        font-size: 14px;
-        font-weight: normal;
-        font-family: Gotham SSm A, Gotham SSm B, Helvetica, Arial, sans-serif;
-        line-height: 20px;
-        color: #60605a;
-        border: 0;
-        max-width: 640px;
-        padding-right: 0;
-        padding-left: 0;
-      }
-
-      @media screen and (max-width: 600px) {
-        .privacy {
-          padding-bottom: 20px !important;
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
         }
-        .priv_top {
-          max-width: 100% !important;
-        }
-        .priv_top td {
-          padding-bottom: 10px !important;
-          padding-left: 0 !important;
-        }
-        .priv_bot {
-          max-width: 100% !important;
-        }
-        .hero_table {
-          min-width: 250px !important;
-        }
-        .body_text p {
-          margin-left: 20px !important;
-          margin-right: 20px !important;
-          font-size: 17px !important;
-          font-weight: normal !important;
-          font-family: "Book", Helvetica, Arial, sans-serif !important;
-          line-height: 23px !important;
-          color: #5b5b64 !important;
-        }
-        .mod {
-          min-width: 250px !important;
-        }
-        .mod_text {
-          padding-top: 40px !important;
-        }
-        .strav_button {
-          max-width: 100% !important;
-          min-width: 335px !important;
-        }
-        .mod_bot td {
-          text-align: center !important;
-        }
-        .outer {
-          min-width: 300px !important;
-        }
-      }
 
-      @media screen and (max-width: 550px) {
-        .hero_mobile {
-          display: block !important;
-          min-width: 100% !Important;
-          min-height: 100% !Important;
-          height: auto !important;
-          max-height: none !important;
-          overflow: visible !important;
+        /* GMAIL BLUE LINKS */
+        u + #body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
         }
-        .hero_desktop {
-          display: none !important;
-        }
-        .headline_h1 {
-          padding-left: 20px !important;
-          padding-right: 20px !important;
-        }
-        .headline_h1 h1 {
-          margin-top: 0 !important;
-          margin-bottom: 0 !important;
-          font-size: 28px !important;
-          font-weight: 400 !important;
-          font-family: "Bold", Maison, sans-serif !important;
-          line-height: 37px !important;
-          color: #1a1a1a !important;
-          letter-spacing: -0.1px !important;
-        }
-        .button_img {
-          display: inline-block !important;
-          padding-bottom: 20px !important;
-        }
-        .button_desktop {
-          display: none !important;
-        }
-        .button_hide {
-          display: block !important;
-          min-width: 100% !Important;
-          min-height: 100% !Important;
-          height: auto !important;
-          max-height: none !important;
-          overflow: visible !important;
-        }
-        .privacy {
-          padding-left: 20px !important;
-          padding-right: 20px !important;
-          padding-top: 50px !important;
-        }
-        .mod_img1 {
-          padding-left: 20px !important;
-        }
-      }
 
-      @font-face {
-        font-family: "Book";
-        font-style: normal;
-        src: local("Maison"), local("Maison Web"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeue-Book.ttf")
-            format("truetype"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeueWEB-Book.woff")
-            format("woff"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeueWEB-Book.woff2")
-            format("woff2");
-      }
+        /* SAMSUNG MAIL BLUE LINKS */
+        #MessageViewBody a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
 
-      @font-face {
-        font-family: "XBold";
-        font-style: normal;
-        src: local("Maison"), local("Maison Web"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeueExtended-ExtraBold.otf")
-            format("opentype"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeueExtendedWEB-ExtraBold.woff")
-            format("woff"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeueExtendedWEB-ExtraBold.woff2")
-            format("woff2");
-      }
+        /* These rules set the link and hover states, making it clear that links are, in fact, links. */
+        /* Embrace established conventions like underlines on links to keep emails accessible. */
+        a { color: #B200FD; font-weight: 600; text-decoration: underline; }
+        a:hover { color: #000000 !important; text-decoration: none !important; }
 
-      @font-face {
-        font-family: "Demi";
-        font-style: normal;
-        src: local("Maison-D"), local("Maison-D Web"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeue-Demi.ttf")
-            format("truetype"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeue-Demi.woff")
-            format("woff"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeue-Demi.woff2")
-            format("woff2");
-      }
-
-      @font-face {
-        font-family: "Bold";
-        font-style: normal;
-        src: local("Maison-D"), local("Maison-D Web"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeue-Bold.ttf")
-            format("truetype"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeue-Bold.woff")
-            format("woff"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeue-Bold.woff2")
-            format("woff2");
-      }
-
-      @font-face {
-        font-family: "Reg";
-        font-style: normal;
-        src: local("Maison-R"), local("Maison-R Web"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeue.ttf")
-            format("truetype"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeue.woff")
-            format("woff"),
-          url("https://s3.amazonaws.com/strava.static/webfonts/maison_neue/MaisonNeue.woff2")
-            format("woff2");
-      }
+        /* These rules adjust styles for desktop devices, keeping the email responsive for users. */
+        /* Some email clients don't properly apply media query-based styles, which is why we go mobile-first. */
+        @media screen and (min-width:600px) {
+            h1 { font-size: 48px !important; line-height: 48px !important; }
+            .intro { font-size: 24px !important; line-height: 36px !important; }
+        }
     </style>
-    <!--[if (gte mso 9)|(IE)
-      ]><style type="text/css">
-        table {
-          border-collapse: collapse !important;
-        }
-      </style><!
-    [endif]-->
-  </head>
+  </head>
+  <body style="margin: 0 !important; padding: 0 !important;">
+    <!-- This ghost table is used to constrain the width in Outlook. The role attribute is set to presentation to prevent it from being read by screenreaders. -->
+    <!--[if (gte mso 9)|(IE)]>
+    <table cellspacing="0" cellpadding="0" border="0" width="720" align="center" role="presentation"><tr><td>
+    <![endif]-->
+    <!-- The role and aria-label attributes are added to wrap the email content as an article for screen readers. Some of them will read out the aria-label as the title of the document, so use something like "An email from Your Brand Name" to make it recognizable. -->
+    <!-- Default styling of text is applied to the wrapper div. Be sure to use text that is large enough and has a high contrast with the background color for people with visual impairments. -->
+    <div role="article" aria-label="An email from Your Brand Name" lang="en" style="background-color: white; color: #2b2b2b; font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 18px; font-weight: 400; line-height: 28px; margin: 0 auto; max-width: 720px; padding: 40px 20px 40px 20px;">
+        
+        <!-- Logo section and header. Headers are useful landmark elements. -->
+        <header>
+            <!-- Since this is a purely decorative image, we can leave the alternative text blank. -->
+            <!-- Linking images also helps with Gmail displaying download links next to them. -->
+            <a href="https://litmus.com/community">
+                <center><img src="https://storage.pardot.com/31032/208017/logo_2x.png" alt="" height="50" width="50"></center>
+            </a>
+            <!-- The h1 is the main heading of the document and should come first. -->
+            <!-- We can override the default styles inline. -->
+            <h1 style="color: #000000; font-size: 32px; font-weight: 800; line-height: 32px; margin: 48px 0; text-align: center;">
+                News from Your Friends<br>
+                <span style="font-size: 24px; font-weight: 600;">Summer Edition</span>
+            </h1>
+                            <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum, eveniet asperiores atque repellendus quo nostrum eos enim eum illum non ad quidem ipsa dolore esse, reprehenderit obcaecati! Vel, quas.
+                </p>
+                    <a href="https://www.producthunt.com/" target="_blank"><img src="https://i.imgur.com/Zp60Q51.png" alt="Stray Cats - the left over products that might not have been the best of the day, but are good enough for to keep for later! | Product Hunt Embed" style="width: 250px; height: 90px;" width="200px" height="80px" /></a>
+        </header>
 
-  <body
-    style="padding: 0px; background-color: rgb(245, 245, 245); margin: 0px !important;"
-  >
-    <center
-      class="wrapper"
-      style="width: 100%; table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;"
-    >
-      <div
-        class="webkit"
-        style="max-width: 640px; margin-top: 0; margin-bottom: 0; margin-right: auto; margin-left: auto;"
-      >
-        <!--[if (gte mso 9)|(IE)]><table width="640" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;"> <tr> <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><![endif]-->
-        <table
-          align="center"
-          bgcolor="#FFFFFF"
-          class="outer"
-          style="min-width: 640px; border-spacing: 0; font-family: sans-serif; color: #333333; Margin: 0 auto; width: 100%; max-width: 640px;"
-          width="100%"
-        >
-          <tbody>
-            <tr>
-              <td
-                style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"
-                width="100%"
-              >
-                <div
-                  class="stav_spacer15"
-                  style="height:15px; line-height:15px; background-color:rgb(245, 245, 245)"
-                ></div>
-                <table
-                  align="center"
-                  bgcolor="#FFFFFF"
-                  class="outer"
-                  style="min-width: 640px; border-spacing: 0; font-family: sans-serif; color: #333333; Margin: 0 auto; width: 100%; max-width: 640px;"
-                  width="100%"
-                >
-                  <tbody>
-                    <!-- Trash Cat -->
-                    <tr>
-                      <td
-                        align="center"
-                        style="padding-top:0px;padding-bottom:35px;padding-right:0px;padding-left:0px;"
-                        valign="top"
-                      >
-                        <a
-                          id="strav_desktop"
-                          style="text-decoration:none"
-                          href="https://www.strava.com/register/free?%243p=e_it&%24original_url=http%3A%2F%2Fwww.strava.com%2Ftry-summit%2Fmoon%3F%24web_only%3Dtrue&_branch_match_id=725149781580619485"
-                          ><img
-                            alt=""
-                            class="hero_desktop"
-                            style="border: 0px; border: 0px; height: auto; display: block; max-width: 200px;"
-                            width="75%"
-                            src="https://cdn.glitch.com/4fbb2a42-383e-4897-a646-06c78874168b%2Fadam%20shared%20a%20drawing%20with%20you.PNG?v=1588363872921"
-                        /></a>
-                        <div
-                          class="hero_mobile"
-                          style="display: none; max-height: 0; max-width: 0; width: 0; height: 0; overflow: hidden;"
-                        >
-                          <a
-                            style="text-decoration:none"
-                            href=""
-                            ><img
-                              alt=""
-                              id="strav_mobile_img"
-                              style="max-width:150px;"
-                              width="100%"
-                              src="https://cdn.glitch.com/4fbb2a42-383e-4897-a646-06c78874168b%2Fadam%20shared%20a%20drawing%20with%20you.PNG?v=1588363872921"
-                          /></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <!-- Start Greeting -->
-                    <tr>
-                      <td
-                        align="center"
-                        bgcolor="#FFFFFF"
-                        style="padding-top:0px;padding-bottom:15px; padding-left:60px; padding-right:60px"
-                        valign="top"
-                      >
-                        <h2 class="product_name">
-                          <a
-                            style="text-decoration:none; color:#1a1a1a;"
-                            href=""
-                            >What did you miss on Product Hunt?</a
-                          >
-                        </h2>
-                      </td>
-                    </tr>
-                    <!-- Opener -->
-                    <tr>
-                      <td class="one-column" width="100%">
-                        <table
-                          style="border-spacing:0;font-family:sans-serif;color:#333333;"
-                          width="100%"
-                        >
-                          <tbody>
-                            <tr>
-                              <td
-                                class="mobilebody"
-                                style="padding-top:0px;padding-bottom:0;padding-right:0;padding-left:0;width:100%;text-align:center;"
-                                width="100%"
-                              >
-                                <p>
-                                  There's a lot of gold on Product Hunt, whether it's a neat little do this app or the New Macbook Pro. But it's hard to keep up and especially so to get through to the diamonds in the rough. That's what this is for, The Stray Cat Project. A daily newsletter of projects that didn't get the love they deserved on Product Hunt.
-                                </p>
-                                 <p>
-                                  If you like us, go ahead and give us an upvote on Product Hunt or a tweet 😅.
-                                </p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- Call to Action -->
-                    <tr>
-                      <td
-                        align="center"
-                        class="one-column"
-                        style="padding-top:20px;padding-bottom:70px;padding-right:0;padding-left:0;border-bottom: solid #f1f1f1 10px;"
-                      >
-                        <!-- start CTA A -->
-                        <table
-                          align="center"
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          class="strav_button"
-                          style="border-radius:5px;overflow:hidden"
-                        >
-                          <tbody>
-                            <tr>
-                              <td align="center">
-                                <a href="https://www.producthunt.com/" target="_blank"><img src="https://i.imgur.com/Zp60Q51.png" alt="Stray Cats - the left over products that might not have been the best of the day, but are good enough for to keep for later! | Product Hunt Embed" style="width: 250px; height: 90px;" width="250px" height="90px" /></a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- Start Product 1 -->
-                    <!-- Product 1 Image -->
-                    <tr>
-                      <td
-                        align="center"
-                        style="padding-top:0px;padding-bottom:35px;padding-right:0px;padding-left:0px;"
-                        valign="top"
-                      >
-                        <a
-                          style="text-decoration:none"
-                          href="{{86015279__fields__URL}}"
-                          ><img
-                            alt=""
-                            class="hero_desktop"
-                            width="75%"
-                            src="{{86015279__fields__Image[]url}}"
-                            style="border: 0px; border: 0px; max-width: 480; height: auto; display: block;"
-                        /></a>
-                        <div
-                          class="hero_mobile"
-                          style="display: none; max-height: 0; max-width: 0; width: 0; height: 0; overflow: hidden;"
-                        >
-                          <a
-                            style="text-decoration:none"
-                            href="{{86015279__fields__URL}}"
-                            ><img
-                              alt=""
-                              id="strav_mobile_img"
-                              width="100%"
-                              src="{{86015279__fields__Image[]url}}"
-                          /></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <!-- Product 1 Title -->
-                    <tr>
-                      <td
-                        align="center"
-                        bgcolor="#FFFFFF"
-                        style="padding-top:0px;padding-bottom:15px; padding-left:60px; padding-right:60px"
-                        valign="top"
-                      >
-                       <h2 class="product_name">
-                          <a
-                            style="text-decoration:none; color:#1a1a1a;"
-                            href="{{86015279__fields__URL}}"
-                            >{{86015279__fields__Name}}</a
-                          >
-                        </h2>
-                      </td>
-                    </tr>
-                    <!-- Product 1 Story -->
-                    <tr>
-                      <td class="one-column" width="100%">
-                        <table
-                          style="border-spacing:0;font-family:sans-serif;color:#333333;"
-                          width="100%"
-                        >
-                          <tbody>
-                            <tr>
-                              <td
-                                class="mobilebody"
-                                style="padding-top:0px;padding-bottom:0;padding-right:0;padding-left:0;width:100%;text-align:center;"
-                                width="100%"
-                              >
-                                <p>
-                                {{86015279__fields__Story}}
-                                </p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- Product 1 Hunt -->
-                    <tr>
-                      <td
-                        align="center"
-                        class="one-column"
-                        style="padding-top:20px;padding-bottom:70px;padding-right:0;padding-left:0;border-bottom: solid #f1f1f1 10px;"
-                      >
-                        <!-- start CTA A -->
-                        <table
-                          align="center"
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          class="strav_button"
-                          style="border-radius:5px;overflow:hidden"
-                        >
-                          <tbody>
-                            <tr>
-                              <td align="center">
-                                <a href="https://www.producthunt.com/posts/{{86015279__fields__Product Hunt ID}}" target="_blank"><img src="https://i.imgur.com/Zp60Q51.png" alt="{{86015279__fields__Short Description}}! | Product Hunt Embed" style="width: 250px; height: 90px;" width="250px" height="90px" /></a>
-</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- End-->
-                    <!-- Start Product 2 -->
-                    <!-- Product 2 Image -->
-                    <tr>
-                      <td
-                        align="center"
-                        style="padding-top:0px;padding-bottom:35px;padding-right:0px;padding-left:0px;"
-                        valign="top"
-                      >
-                        <a
-                          style="text-decoration:none"
-                          href="{{86015841__fields__URL}}"
-                          ><img
-                            alt=""
-                            class="hero_desktop"
-                            width="75%"
-                            src="{{86015841__fields__Image[]url}}"
-                            style="border: 0px; border: 0px; max-width: 480; height: auto; display: block;"
-                        /></a>
-                        <div
-                          class="hero_mobile"
-                          style="display: none; max-height: 0; max-width: 0; width: 0; height: 0; overflow: hidden;"
-                        >
-                          <a
-                            style="text-decoration:none"
-                            href="{{86015841__fields__URL}}"
-                            ><img
-                              alt=""
-                              id="strav_mobile_img"
-                              width="100%"
-                              src="{{86015841__fields__Image[]url}}"
-                          /></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <!-- Product 2 Title -->
-                    <tr>
-                      <td
-                        align="center"
-                        bgcolor="#FFFFFF"
-                        style="padding-top:0px;padding-bottom:15px; padding-left:60px; padding-right:60px"
-                        valign="top"
-                      >
-                        <h2 class="product_name">
-                          <a
-                            style="text-decoration:none; color:#1a1a1a;"
-                            href="{{86015841__fields__URL}}"
-                            >{{86015841__fields__Name}}</a
-                          >
-                        </h2>
-                      </td>
-                    </tr>
-                    <!-- Product 2 Story -->
-                    <tr>
-                      <td class="one-column" width="100%">
-                        <table
-                          style="border-spacing:0;font-family:sans-serif;color:#333333;"
-                          width="100%"
-                        >
-                          <tbody>
-                            <tr>
-                              <td
-                                class="mobilebody"
-                                style="padding-top:0px;padding-bottom:0;padding-right:0;padding-left:0;width:100%;text-align:center;"
-                                width="100%"
-                              >
-                                <p>
-{{86015841__fields__Story}}
-                                </p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- Product 2 Hunt -->
-                    <tr>
-                      <td
-                        align="center"
-                        class="one-column"
-                        style="padding-top:20px;padding-bottom:70px;padding-right:0;padding-left:0;border-bottom: solid #f1f1f1 10px;"
-                      >
-                        <!-- start CTA A -->
-                        <table
-                          align="center"
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          class="strav_button"
-                          style="border-radius:5px;overflow:hidden"
-                        >
-                          <tbody>
-                            <tr>
-                              <td align="center">
-                                <a href="https://www.producthunt.com/posts/{{86015841__fields__Product Hunt ID}}" target="_blank"><img src="https://i.imgur.com/Zp60Q51.png" alt="{{86015841__fields__Short Description}}! | Product Hunt Embed" style="width: 250px; height: 90px;" width="250px" height="90px" /></a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- End-->
-                    <!-- Start Product 3 -->
-                    <!-- Product 3 Image -->
-                    <tr>
-                      <td
-                        align="center"
-                        style="padding-top:0px;padding-bottom:35px;padding-right:0px;padding-left:0px;"
-                        valign="top"
-                      >
-                        <a
-                          style="text-decoration:none"
-                          href="{{86016380__fields__URL}}"
-                          ><img
-                            alt=""
-                            class="hero_desktop"
-                            width="75%"
-                            src="{{86016380__fields__Image[]url}}"
-                            style="border: 0px; border: 0px; max-width: 640; height: auto; display: block;"
-                        /></a>
-                        <div
-                          class="hero_mobile"
-                          style="display: none; max-height: 0; max-width: 0; width: 0; height: 0; overflow: hidden;"
-                        >
-                          <a
-                            style="text-decoration:none"
-                            href="{{86016380__fields__URL}}"
-                            ><img
-                              alt=""
-                              id="strav_mobile_img"
-                              width="75%"
-                              src="{{86016380__fields__Image[]url}}"
-                          /></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <!-- Product 3 Title -->
-                    <tr>
-                      <td
-                        align="center"
-                        bgcolor="#FFFFFF"
-                        style="padding-top:0px;padding-bottom:15px; padding-left:60px; padding-right:60px"
-                        valign="top"
-                      >
-                        <h2 class="product_name">
-                          <a
-                            style="text-decoration:none; color:#1a1a1a;"
-                            href="{{86016380__fields__Image[]url}}"
-                            >{{86016380__fields__Name}}</a
-                          >
-                        </h2>
-                      </td>
-                    </tr>
-                    <!-- Product 3 Story -->
-                    <tr>
-                      <td class="one-column" width="100%">
-                        <table
-                          style="border-spacing:0;font-family:sans-serif;color:#333333;"
-                          width="100%"
-                        >
-                          <tbody>
-                            <tr>
-                              <td
-                                class="mobilebody"
-                                style="padding-top:0px;padding-bottom:0;padding-right:0;padding-left:0;width:100%;text-align:center;"
-                                width="100%"
-                              >
-                                <p>
-                                {{86016380__fields__Story}}
-                                </p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- Product 3 Hunt -->
-                    <tr>
-                      <td
-                        align="center"
-                        class="one-column"
-                        style="padding-top:20px;padding-bottom:70px;padding-right:0;padding-left:0;border-bottom: solid #f1f1f1 10px;"
-                      >
-                        <!-- start CTA A -->
-                        <table
-                          align="center"
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          class="strav_button"
-                          style="border-radius:5px;overflow:hidden"
-                        >
-                          <tbody>
-                            <tr>
-                              <td align="center">
-                                <a href="https://www.producthunt.com/posts/{{86016380__fields__Product Hunt ID}}?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-sellflow" target="_blank"><img src="https://i.imgur.com/Zp60Q51.png" alt="{{86016380__fields__Short Description}}! | Product Hunt Embed" style="width: 250px; height: 90px;" width="250px" height="90px" /></a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- End-->
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-            <!-- Start Footer -->
-            <tr>
-              <td style="padding:0;margin:0;">
-                <table
-                  cellpadding="0"
-                  cellspacing="0"
-                  width="100%"
-                  style="padding-bottom:0px;padding-right:0px;padding-top:0px;border-style:solid;border-width:0px 1px 1px 1px;border-color:#f0f0f5; margin:0;"
-                >
-                  <tbody>
-                    <tr>
-                      <td
-                        bgcolor="#FFFFFF"
-                        class="foot_logo"
-                        align="center"
-                        width="162px"
-                        style="padding-bottom: 0px; padding-right: 0px; padding-top: 40px; padding-bottom: 20px;"
-                      >
-                        <a
-                          class="link"
-                          style=""
-                          href="http://links.strava.com/e/evib?_t=71b0d80eb21d4d72bd6edd756ec7d223&_m=c9fa5c7899d64828afc865f1f1c4d26b&_e=QEoZddi5PjaTQS0VxtF_11LYVxR060UG3meyqg-hJ9VB4_dncoDrTnWbZpYbU9Jqwfbzy1ZURjDItBb86xlYv3OLiSW3pHSMj1gM6G2QJ5Nn_eMKyrNQMrJA5sEHaj9s"
-                          ><img
-                            alt=""
-                            width="106px"
-                            src="https://cdn.glitch.com/4fbb2a42-383e-4897-a646-06c78874168b%2Fadam%20shared%20a%20drawing%20with%20you.PNG?v=1588363872921"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        class="foot_text"
-                        align="center"
-                        width="100%"
-                        bgcolor="#FFFFFF"
-                      >
-                        <p>
-                          <br />
-                          Made by <a href="www.twitter.com/theAdamUpchurch">Adam Upchurch</a> in Atlanta
-                          <br />
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        class="foot_icon"
-                        align="center"
-                        bgcolor="#FFFFFF"
-                        valign="top"
-                        style="padding-top:20px;padding-bottom:80px;padding-left:0px;padding-right:0px;"
-                      >
-                        <table>
-                          <tbody>
-                            <tr>
+        <!-- Main content section. Main is a useful landmark element. -->
+        <main>
+            <!-- Article elements can be used to section individual articles in an email. -->
+            <article>
+                <!-- This image uses a responsive-by-default approach. It will scale across devices. -->
+                <img alt="" src="https://storage.pardot.com/31032/208021/summer_2x.png" width="600" border="0" style="border-radius: 4px; display: block; margin-top: 48px; max-width: 100%; min-width: 100px; width: 100%;">
+                <!-- A level 2 heading is used to keep the document order correct. -->
+                <h2 style="color: #000000; font-size: 28px; font-weight: 600; line-height: 32px; margin: 48px 0 24px 0; text-align: center;">
+                    Summer is here!
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum, eveniet asperiores atque repellendus quo nostrum eos enim eum illum non ad quidem ipsa dolore esse, reprehenderit obcaecati! Vel, quas.
+                </p>
+                <!-- This link uses descriptive text to inform the user what will happen with the link is tapped. -->
+                <!-- It also uses inline styles since some email clients won't render embedded styles from the head. -->
+                <a href="https://litmus.com/community" style="color: #B200FD; text-decoration: underline;">Build more accessible emails</a>
+            </article>
 
-                              <td
-                                bgcolor="#FFFFFF"
-                                align="center"
-                                width="48px"
-                                style="padding-right:20px;"
-                              >
-                                <a href="https://twitter.com/theAdamUpchurch"
-                                  ><img
-                                    alt="twitter"
-                                    width="48px"
-                                    src="https://d2axdqolvqmdvx.cloudfront.net/b9fcb9de-619e-4ab8-b92c-6902025a56f0/TwitterIcon2x.png"
-                                  />
-                                </a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <!--[if (gte mso 9)|(IE)]></td> </tr> </table><![endif]-->
-      </div>
-    </center>
-  </body>
+            <article style="margin: 0 0 48px 0;">
+                <!-- This image uses a responsive-by-default approach. It will scale across devices. -->
+                <img alt="" src="https://storage.pardot.com/31032/208015/fall_2x.png" width="600" border="0" style="border-radius: 4px; display: block; margin-top: 48px; max-width: 100%; min-width: 100px; width: 100%;">
+                <!-- A level 2 heading is used to keep the document order correct. -->
+                <h2 style="color: #000000; font-size: 28px; font-weight: 600; line-height: 32px; margin: 48px 0 24px 0; text-align: center;">
+                    But fall will be here soon&hellip;
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum, eveniet asperiores atque repellendus quo nostrum eos enim eum illum non ad quidem ipsa dolore esse, reprehenderit obcaecati! Vel, quas.
+                </p>
+                <!-- This link uses descriptive text to inform the user what will happen with the link is tapped. -->
+                <!-- It also uses inline styles since some email clients won't render embedded styles from the head. -->
+                <a href="https://litmus.com/community" style="color: #B200FD; text-decoration: underline;">Build more accessible emails</a>
+            </article>
+
+            <article style="margin: 0 0 48px 0;">
+                <!-- This image uses a responsive-by-default approach. It will scale across devices. -->
+                <img alt="" src="https://storage.pardot.com/31032/208023/winter_2x.png" width="600" border="0" style="border-radius: 4px; display: block; margin-top: 48px; max-width: 100%; min-width: 100px; width: 100%;">
+                <!-- A level 2 heading is used to keep the document order correct. -->
+                <h2 style="color: #000000; font-size: 28px; font-weight: 600; line-height: 32px; margin: 48px 0 24px 0; text-align: center;">
+                    Who's ready for winter?
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum, eveniet asperiores atque repellendus quo nostrum eos enim eum illum non ad quidem ipsa dolore esse, reprehenderit obcaecati! Vel, quas.
+                </p>
+                <!-- This link uses descriptive text to inform the user what will happen with the link is tapped. -->
+                <!-- It also uses inline styles since some email clients won't render embedded styles from the head. -->
+                <a href="https://litmus.com/community" style="color: #B200FD; text-decoration: underline;">Build more accessible emails</a>
+            </article>
+        </main>
+
+        <!-- Footer information. Footer is a useful landmark element. -->
+        <footer>
+            <!-- This link uses descriptive text to inform the user what will happen with the link is tapped. -->
+            <!-- It also uses inline styles since some email clients won't render embedded styles from the head. -->
+            <p style="font-size: 16px; font-weight: 400; line-height: 24px; margin-top: 48px;">
+                You received this email because you care about creating more accessible experiences for people. Don't worry, <a href="https://litmus.com/community" style="color: #B200FD; text-decoration: underline;">you can unsubscribe here</a>.
+            </p>
+    
+            <!-- The address element does exactly what it says. By default, it is block-level and italicizes text. You can override this behavior inline. -->
+            <address style="font-size: 16px; font-style: normal; font-weight: 400; line-height: 24px;">
+                <strong>Built by Adam Upchurch</strong> in Atlanta, GA
+            </address>
+        </footer>
+
+    </div>
+    <!--[if (gte mso 9)|(IE)]>
+    </td></tr></table>
+    <![endif]-->
+  </body>
 </html>
